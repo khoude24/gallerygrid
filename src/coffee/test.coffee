@@ -1,0 +1,1 @@
+new GalleryGrid document.getElementById( 'grid-gallery' )

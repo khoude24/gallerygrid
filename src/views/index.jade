@@ -1,0 +1,105 @@
+doctype html
+html(lang="en")
+   head
+      title Herosheets Gallery
+      link(href="./css/lib.css",rel="stylesheet")
+      link(href="./css/index.css",rel="stylesheet")
+   body
+      #grid-gallery.grid-gallery
+         section.grid-wrap
+            ul.grid
+               li.grid-sizer
+               //
+                  for Masonry column width
+               li
+                  figure
+                     img(src='img/thumb/1.png', alt='img01')
+                     figcaption
+                        h3 Letterpress asymmetrical
+                        p Chillwave hoodie ea gentrify aute sriracha consequat.
+               li
+                  figure
+                     img(src='img/thumb/2.png', alt='img02')
+                     figcaption
+                        h3 Vice velit chia
+                        p
+                           | Laborum tattooed iPhone, Schlitz irure nulla Tonx retro 90's chia cardigan quis asymmetrical paleo.
+               li
+                  figure
+                     img(src='img/thumb/3.png', alt='img03')
+                     figcaption
+                        h3 Brunch semiotics
+                        p
+                           | Ex disrupt cray yr, butcher pour-over magna umami kitsch before they sold out commodo.
+               li
+                  figure
+                     img(src='img/thumb/4.png', alt='img04')
+                     figcaption
+                        h3 Chillwave nihil occupy
+                        p In post-ironic gluten-free deserunt, PBR&B non pork belly cupidatat polaroid.
+               li
+                  figure
+                     img(src='img/thumb/5.png', alt='img05')
+                     figcaption
+                        h3 Kale chips lomo biodiesel
+                        p Pariatur food truck street art consequat sustainable, et kogi beard qui paleo.
+               li
+                  figure
+                     img(src='img/thumb/6.png', alt='img06')
+                     figcaption
+                        h3 Exercitation occaecat
+                        p Street chillwave hoodie ea gentrify.
+         //
+            // grid-wrap
+         section.slideshow
+            ul
+               li
+                  figure
+                     figcaption
+                        h3 Letterpress asymmetrical
+                        p
+                           | Kale chips lomo biodiesel stumptown Godard Tumblr, mustache sriracha tattooed cray aute slow-carb placeat delectus. Letterpress asymmetrical fanny pack art party est pour-over skateboard anim quis, ullamco craft beer.
+                     img(src='img/large/1.png', alt='img01')
+               li
+                  figure
+                     figcaption
+                        h3 Vice velit chia
+                        p
+                           | Chillwave Echo Park Etsy organic Cosby sweater seitan authentic pour-over. Occupy wolf selvage bespoke tattooed, cred sustainable Odd Future hashtag butcher.
+                     img(src='img/large/2.png', alt='img02')
+               li
+                  figure
+                     figcaption
+                        h3 Brunch semiotics
+                        p
+                           | IPhone PBR polaroid before they sold out meh you probably haven't heard of them leggings tattooed tote bag, butcher paleo next level single-origin coffee photo booth.
+                     img(src='img/large/3.png', alt='img03')
+               li
+                  figure
+                     figcaption
+                        h3 Chillwave nihil occupy
+                        p
+                           | Vice cliche locavore mumblecore vegan wayfarers asymmetrical letterpress hoodie mustache. Shabby chic lomo polaroid, scenester 8-bit Portland Pitchfork VHS tote bag.
+                     img(src='img/large/4.png', alt='img04')
+               li
+                  figure
+                     figcaption
+                        h3 Kale chips lomo biodiesel
+                        p
+                           | Chambray Schlitz pug YOLO, PBR Tumblr semiotics. Flexitarian YOLO ennui Blue Bottle, forage dreamcatcher chillwave put a bird on it craft beer Etsy.
+                     img(src='img/large/5.png', alt='img05')
+               li
+                  figure
+                     figcaption
+                        h3 Exercitation occaecat
+                        p
+                           | Cosby sweater hella lomo Thundercats VHS occupy High Life. Synth pop-up readymade single-origin coffee, fanny pack tousled retro. Fingerstache mlkshk ugh hashtag, church-key ethnic street art pug yr.
+                     img(src='img/large/6.png', alt='img06')
+            nav
+               span.nav-prev.fa.fa-fw.fa-arrow-left
+               span.nav-next.fa.fa-fw.fa-arrow-right
+               span.nav-close.fa.fa-fw.fa-remove
+            .info-keys.icon Navigate with arrow keys
+
+      script(src="./js/lib.js")
+      script(src="./js/index.js")

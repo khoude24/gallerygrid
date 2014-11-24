@@ -1,0 +1,29 @@
+{
+  "name": "angular-gallery",
+  "version": "0.0.0",
+  "homepage": "https://github.com/herosheets/angular-gallery/WebFE",
+  "authors": [
+    "Kyle Kemp <kyle@seiyria.com>"
+  ],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "1.3.0",
+    "font-awesome": "~4.2.0",
+    "lodash": "~2.4.1",
+    "jquery": "~2.1.1",
+    "angular-animate": "1.3.0",
+    "font-awesome-animation": "~0.0.5",
+    "masonry": "~3.2.1",
+    "classie": "~1.0.1",
+    "modernizr": "~2.8.3",
+    "imagesloaded": "~3.1.8"
+  }
+}
