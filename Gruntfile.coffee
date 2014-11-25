@@ -9,7 +9,7 @@ module.exports = (grunt) ->
     coffee:
       dev:
         files:
-          'dist/js/index.js': ['src/**/*.coffee']
+          'dist/js/gallerygrid.js': ['src/**/*.coffee']
 
     uglify:
       options:
@@ -23,7 +23,7 @@ module.exports = (grunt) ->
     less:
       dev:
         files:
-          'dist/css/index.css': ['src/**/*.less']
+          'dist/css/gallerygrid.css': ['src/**/*.less']
       lib:
         files:
           'dist/css/lib.css': ['<%= pkg.build.css %>']
@@ -33,7 +33,7 @@ module.exports = (grunt) ->
         pretty: yes
       dev:
         files:
-          'dist/index.html': ['src/**/*.jade']
+          'dist/index.html': ['test/**/*.jade']
 
   #### Linting
     coffeelint:

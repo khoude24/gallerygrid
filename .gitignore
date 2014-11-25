@@ -27,7 +27,7 @@ bower_components
 
 # Users Environment Variables
 .lock-wscript
-dist
+# dist
 
 .idea
 dist/css/lib.css
