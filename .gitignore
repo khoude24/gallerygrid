@@ -30,3 +30,7 @@ bower_components
 dist
 
 .idea
+dist/css/lib.css
+dist/js/lib.js
+dist/fonts
+dist/index.html
