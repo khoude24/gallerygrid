@@ -93,8 +93,8 @@ class GalleryGrid
 
     @setViewportItems()
 
-    classie.addClass @currentItem, 'current'
     classie.addClass @currentItem, 'show'
+    classie.addClass @currentItem, 'current'
 
     if @prevItem
       classie.addClass @prevItem, 'show'
@@ -165,6 +165,8 @@ class GalleryGrid
 
         self.current = if dir is Constants.NEXT then self.current+1 else self.current-1
         self.isAnimating = no
+
+        classie.addClass self.currentItem, 'current'
 
       if support.transitions then @currentItem.addEventListener transEndEventName, onEndTransitionFn else onEndTransitionFn()
 

@@ -154,8 +154,8 @@
       this.current = pos;
       classie.addClass(this.el, 'slideshow-open');
       this.setViewportItems();
-      classie.addClass(this.currentItem, 'current');
       classie.addClass(this.currentItem, 'show');
+      classie.addClass(this.currentItem, 'current');
       if (this.prevItem) {
         classie.addClass(this.prevItem, 'show');
         translateVal = GalleryHelpers.translate(this.prevItem, -1);
@@ -249,7 +249,8 @@
               }
             }
             self.current = dir === Constants.NEXT ? self.current + 1 : self.current - 1;
-            return self.isAnimating = false;
+            self.isAnimating = false;
+            return classie.addClass(self.currentItem, 'current');
           };
           if (support.transitions) {
             return _this.currentItem.addEventListener(transEndEventName, onEndTransitionFn);
