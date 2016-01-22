@@ -31,6 +31,8 @@ class GalleryHelpers
   @translate = (el, multiplier = 1) ->
     Number multiplier * (viewportWidth() / 2 + el.offsetWidth / 2)
 
+  @findImageIndex = (idx) => idx
+
 class GalleryGrid
   constructor: (@el, @options = {}) ->
     @init()
@@ -41,7 +43,7 @@ class GalleryGrid
 
     @itemsCount = @gridItems.length
     @slideshow = @el.querySelector 'section.slideshow > ul'
-    @slideshowItems = [].slice.call @slideshow.children
+    @slideshowItems = null
 
     @current = -1
     @ctrlPrev = @el.querySelector 'section.slideshow > nav > span.nav-prev'
@@ -60,7 +62,7 @@ class GalleryGrid
   initEvents: ->
     _.each @gridItems, (item, idx) =>
       item.addEventListener 'click', =>
-        @openSlideshow idx
+        @openSlideshow GalleryHelpers.findImageIndex(idx)
 
     @ctrlPrev.addEventListener 'click', => @navigate Constants.PREV
     @ctrlNext.addEventListener 'click', => @navigate Constants.NEXT
@@ -194,6 +196,7 @@ class GalleryGrid
     if support.transitions then @el.addEventListener transEndEventName, onEndTransitionFn else onEndTransitionFn()
 
   setViewportItems: ->
+    @slideshowItems = [].slice.call @slideshow.children
     @currentItem = null
     @nextItem = null
     @prevItem = null
@@ -215,3 +218,4 @@ class GalleryGrid
 
 root = exports ? window
 root.GalleryGrid = GalleryGrid
+root.GalleryHelpers = GalleryHelpers

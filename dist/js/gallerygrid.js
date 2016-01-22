@@ -56,6 +56,10 @@
       return Number(multiplier * (viewportWidth() / 2 + el.offsetWidth / 2));
     };
 
+    GalleryHelpers.findImageIndex = function(idx) {
+      return idx;
+    };
+
     return GalleryHelpers;
 
   })();
@@ -72,7 +76,7 @@
       this.gridItems = [].slice.call(this.grid.querySelectorAll('li:not(.grid-sizer)'));
       this.itemsCount = this.gridItems.length;
       this.slideshow = this.el.querySelector('section.slideshow > ul');
-      this.slideshowItems = [].slice.call(this.slideshow.children);
+      this.slideshowItems = null;
       this.current = -1;
       this.ctrlPrev = this.el.querySelector('section.slideshow > nav > span.nav-prev');
       this.ctrlNext = this.el.querySelector('section.slideshow > nav > span.nav-next');
@@ -96,7 +100,7 @@
       _.each(this.gridItems, (function(_this) {
         return function(item, idx) {
           return item.addEventListener('click', function() {
-            return _this.openSlideshow(idx);
+            return _this.openSlideshow(GalleryHelpers.findImageIndex(idx));
           });
         };
       })(this));
@@ -295,6 +299,7 @@
     };
 
     GalleryGrid.prototype.setViewportItems = function() {
+      this.slideshowItems = [].slice.call(this.slideshow.children);
       this.currentItem = null;
       this.nextItem = null;
       this.prevItem = null;
@@ -329,5 +334,7 @@
   root = typeof exports !== "undefined" && exports !== null ? exports : window;
 
   root.GalleryGrid = GalleryGrid;
+
+  root.GalleryHelpers = GalleryHelpers;
 
 }).call(this);
