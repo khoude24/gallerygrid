@@ -74,7 +74,7 @@
     GalleryGrid.prototype.init = function() {
       this.grid = this.el.querySelector('section.grid-wrap > ul.grid');
       this.gridItems = [].slice.call(this.grid.querySelectorAll('li:not(.grid-sizer)'));
-      this.itemsCount = this.gridItems.length;
+      this.itemsCount = null;
       this.slideshow = this.el.querySelector('section.slideshow > ul');
       this.slideshowItems = null;
       this.current = -1;
@@ -300,6 +300,7 @@
 
     GalleryGrid.prototype.setViewportItems = function() {
       this.slideshowItems = [].slice.call(this.slideshow.children);
+      this.itemsCount = this.slideshowItems.length;
       this.currentItem = null;
       this.nextItem = null;
       this.prevItem = null;

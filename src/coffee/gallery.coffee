@@ -41,7 +41,7 @@ class GalleryGrid
     @grid = @el.querySelector 'section.grid-wrap > ul.grid'
     @gridItems = [].slice.call @grid.querySelectorAll 'li:not(.grid-sizer)'
 
-    @itemsCount = @gridItems.length
+    @itemsCount = null
     @slideshow = @el.querySelector 'section.slideshow > ul'
     @slideshowItems = null
 
@@ -197,6 +197,7 @@ class GalleryGrid
 
   setViewportItems: ->
     @slideshowItems = [].slice.call @slideshow.children
+    @itemsCount = @slideshowItems.length
     @currentItem = null
     @nextItem = null
     @prevItem = null
