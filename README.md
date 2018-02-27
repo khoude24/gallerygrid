@@ -1,4 +1,4 @@
-# gallerygrid
+# gallerygrid [![Build Status](https://travis-ci.org/GabLeRoux/gallerygrid.svg?branch=master)](https://travis-ci.org/GabLeRoux/gallerygrid)
 
 **This fork is patched to be compatible with webpack when used with `bower`**
 Todo: Find a better way to point to fonts.
