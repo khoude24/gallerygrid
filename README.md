@@ -49,15 +49,20 @@ Sample markup:
 
 ## Development
 
-* install yarn
-* install dependencies
+* install [yarn](https://yarnpkg.com/en/)
+* install npm dependencies
+* install bower dependencies
 * See `package.json`'s `scripts`
 
 ```bash
+yarn add -g bower
+bower i
 yarn
-yarn run test
+yarn run build-lib
 yarn run build
 ```
+
+:v:
 
 ## LICENSE
 
