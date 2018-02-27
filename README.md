@@ -50,11 +50,13 @@ Sample markup:
 ## Development
 
 * install [yarn](https://yarnpkg.com/en/)
+* install [bower](https://bower.io/)
 * install npm dependencies
 * install bower dependencies
 * See `package.json`'s `scripts`
 
 ```bash
+npm i -g yarn
 yarn global add bower
 bower i
 yarn
