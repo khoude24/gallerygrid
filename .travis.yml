@@ -1,0 +1,20 @@
+language: node_js
+node_js:
+  - "6.12.0"
+  - "node"
+  - "lts/*"
+  - "8"
+  - "7"
+  - "6"
+  - "5"
+  - "4"
+
+before_script:
+  - yarn add -g bower
+  - bower i
+
+script:
+  - yarn run build-lib
+  - yarn run build
+
+cache: yarn
