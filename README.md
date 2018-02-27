@@ -1,5 +1,7 @@
-gallerygrid
-===========
+# gallerygrid
+
+**This fork is patched to be compatible with webpack when used with `bower`**
+Todo: Find a better way to point to fonts.
 
 Heavily based on http://tympanus.net/codrops/2014/03/21/google-grid-gallery/
 
@@ -11,8 +13,9 @@ Dependencies:
 * modernizr~2.8.3
 * imagesloaded~3.1.8
 
-Usage
-=====
+
+## Usage
+
 * include gallerygrid.css and gallerygrid.js
 * to create a GalleryGrid instance, first select the gallery element you want to use, then pass it into the GalleryGrid constructor like so: `new GalleryGrid(document.getElementById('grid-gallery'))`
 
@@ -43,3 +46,20 @@ Sample markup:
             span.nav-close.fa.fa-fw.fa-remove
         .info-keys.icon Navigate with arrow keys
 ```
+
+## Development
+
+* install yarn
+* install dependencies
+* See `package.json`'s `scripts`
+
+```bash
+yarn
+yarn run test
+yarn run build
+```
+
+## LICENSE
+
+[MIT](LICENSE.md) © [herosheets](https://github.com/herosheets)
+
