@@ -55,7 +55,7 @@ Sample markup:
 * See `package.json`'s `scripts`
 
 ```bash
-yarn add -g bower
+yarn global add bower
 bower i
 yarn
 yarn run build-lib

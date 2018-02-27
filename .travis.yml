@@ -10,7 +10,7 @@ node_js:
   - "4"
 
 before_script:
-  - yarn add -g bower
+  - yarn global add bower
   - bower i
 
 script:
