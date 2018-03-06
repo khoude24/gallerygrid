@@ -22,8 +22,11 @@ module.exports = (grunt) ->
 
     less:
       dev:
-        files:
-          'dist/css/gallerygrid.css': ['src/**/*.less']
+        expand: true,
+        cwd: 'src/less'
+        src: ['**/*.less']
+        dest: 'dist/css/'
+        ext: '.css'
       lib:
         files:
           'dist/css/lib.css': ['<%= pkg.build.css %>']

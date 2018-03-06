@@ -1,7 +1,21 @@
 # gallerygrid [![Build Status](https://travis-ci.org/GabLeRoux/gallerygrid.svg?branch=master)](https://travis-ci.org/GabLeRoux/gallerygrid)
 
-**This fork is patched to be compatible with webpack when used with `bower`**
-Todo: Find a better way to point to fonts.
+**This fork is patched to be compatible with webpack where you can specify yourself the fontawesome font-face**
+
+Make sure you add something similar to this to your own styles:
+
+```css
+@font-face {
+  font-family: 'fontawesome';
+  src:url('~bower_components/font-awesome/fontawesome-webfont.eot?-e43dk9');
+  src:url('~bower_components/font-awesome/fontawesome-webfont.eot?#iefix-e43dk9') format('embedded-opentype'),
+      url('~bower_components/font-awesome/fontawesome-webfont.woff?-e43dk9') format('woff'),
+      url('~bower_components/font-awesome/fontawesome-webfont.ttf?-e43dk9') format('truetype'),
+      url('~bower_components/font-awesome/fontawesome-webfont.svg?-e43dk9#fontawesome') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+```
 
 Heavily based on http://tympanus.net/codrops/2014/03/21/google-grid-gallery/
 
