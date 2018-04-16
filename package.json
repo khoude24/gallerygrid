@@ -31,24 +31,19 @@
     "grunt-contrib-uglify": "~0.6.0",
     "grunt-contrib-watch": "~0.6.1",
     "grunt-open": "~0.2.3",
-    "load-grunt-tasks": "~1.0.0"
+    "load-grunt-tasks": "~1.0.0",
+    "font-awesome": "~4.2.0",
+    "lodash": "~2.4.1",
+    "masonry": "~3.2.1",
+    "classie": "~1.0.1",
+    "modernizr": "~2.8.3",
+    "imagesloaded": "~3.1.8"
   },
   "build": {
     "js": [
-      "bower_components/modernizr/modernizr.js",
-      "bower_components/lodash/dist/lodash.js",
-      "bower_components/jquery/dist/jquery.js",
-      "bower_components/imagesloaded/imagesloaded.pkgd.js",
-      "bower_components/masonry/dist/masonry.pkgd.js",
-      "bower_components/classie/classie.js",
-      "bower_components/angular/angular.js",
-      "bower_components/angular-animate/angular-animate.js",
       "src/assets/js/*.js"
     ],
     "css": [
-      "bower_components/angular/angular-csp.css",
-      "bower_components/font-awesome/css/font-awesome.css",
-      "bower_components/font-awesome-animation/dist/font-awesome-animation.css",
       "src/assets/css/*.css"
     ]
   }
